@@ -3,3 +3,9 @@ variable "tag-name"{
     type= string 
     default= "ec2Variable"
 }
+
+variable "sg-name"{
+    description= "security group name variable"
+    type= string 
+    default= "SGVariable"
+}
