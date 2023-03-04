@@ -18,7 +18,7 @@ resource "aws_eip_association" "associate"{
 }
 
 resource "aws_security_group" "sg" {
-  name = "salma-sg"
+  name = var.sg-name
   tags = {
     Name = "test-sg"
     type = "terraform-test-security-group"
