@@ -3,7 +3,7 @@ resource "aws_instance" "my-ec2"{
     instance_type="t2.micro"
 
     tags = {
-        Name = "salmaEc2Module"
+        Name = var.tag-name
     }
 }
 
